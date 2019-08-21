@@ -1,0 +1,114 @@
+{
+  "name": "fcjs",
+  "version": "1.0.0",
+  "description": "flight controller library based on multiwii serial protocol",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "deneme": "ts-node deneme.ts",
+    "start": "node lib/index.js",
+    "dev": "nodemon --exec ts-node src/index.ts --watch src",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test",
+    "postversion": "git push && git push --tags",
+    "test": "jest --watch",
+    "version": "npm run format && git add -A src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "REPOSITORY"
+  },
+  "keywords": [
+    "flight",
+    "drone",
+    "craft",
+    "typescript",
+    "msp",
+    "multiwii"
+  ],
+  "author": "Kubilay Salih <kubilay@kubilay.io> (https://kubilay.io)",
+  "files": [
+    "lib"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^24.0.17",
+    "@types/node": "^12.7.2",
+    "@types/serialport": "^7.0.4",
+    "@typescript-eslint/eslint-plugin": "^2.0.0",
+    "@typescript-eslint/parser": "^2.0.0",
+    "eslint": "^6.2.0",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "jest": "^24.9.0",
+    "nodemon": "^1.19.1",
+    "prettier": "^1.18.2",
+    "ts-jest": "^24.0.2",
+    "ts-node": "^8.3.0",
+    "typescript": "^3.5.3"
+  },
+  "dependencies": {
+    "serialport": "^7.1.5"
+  },
+  "prettier": {
+    "semi": false,
+    "trailingComma": "none",
+    "singleQuote": true,
+    "printWidth": 120,
+    "tabWidth": 2
+  },
+  "eslintConfig": {
+    "env": {
+      "node": true
+    },
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+      "@typescript-eslint",
+      "prettier"
+    ],
+    "extends": [
+      "plugin:@typescript-eslint/recommended",
+      "prettier/@typescript-eslint",
+      "plugin:prettier/recommended"
+    ],
+    "parserOptions": {
+      "ecmaVersion": 2018,
+      "sourceType": "module"
+    },
+    "rules": {
+      "@typescript-eslint/consistent-type-assertions": "off",
+      "@typescript-eslint/no-explicit-any": "off",
+      "arrow-parens": [
+        "off"
+      ],
+      "consistent-return": "off",
+      "comma-dangle": "off",
+      "generator-star-spacing": "off",
+      "global-require": "off",
+      "import/no-extraneous-dependencies": "off",
+      "lines-between-class-members": "warn",
+      "no-console": "off",
+      "no-use-before-define": "off",
+      "no-unused-vars": "warn",
+      "no-undef": "off",
+      "no-multi-assign": "off",
+      "semi": [
+        "warn",
+        "never"
+      ],
+      "quotes": [
+        "warn",
+        "single"
+      ]
+    }
+  },
+  "eslintIgnore": [
+    "lib"
+  ],
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node"
+  }
+}
