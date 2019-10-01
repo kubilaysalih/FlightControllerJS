@@ -1,6 +1,6 @@
 {
   "name": "fcjs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "flight controller library based on multiwii serial protocol",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "REPOSITORY"
+    "url": "https://github.com/kubilaysalih/FlightControllerJS"
   },
   "keywords": [
     "flight",
@@ -31,6 +31,16 @@
   "author": "Kubilay Salih <kubilay@kubilay.io> (https://kubilay.io)",
   "files": [
     "lib"
+  ],
+  "contributors": [{
+      "name": "Berk Duman",
+      "email": "berkduman9@gmail.com"
+    },
+    {
+      "name": "Abdullah Çavuş",
+      "email": "abdullahcavus58@gmail.com",
+      "url": "https://kozmonott.com"
+    }
   ],
   "license": "MIT",
   "devDependencies": {
