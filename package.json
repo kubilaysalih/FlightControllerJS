@@ -60,7 +60,7 @@
     "typescript": "^3.5.3"
   },
   "dependencies": {
-    "serialport": "^7.1.5"
+    "serialport": "^9.0.0"
   },
   "prettier": {
     "semi": false,
