@@ -44,7 +44,7 @@
   ],
   "license": "MIT",
   "devDependencies": {
-    "@types/jest": "^24.0.17",
+    "@types/jest": "^25.2.3",
     "@types/node": "^12.7.2",
     "@types/serialport": "^7.0.4",
     "@typescript-eslint/eslint-plugin": "^2.0.0",
